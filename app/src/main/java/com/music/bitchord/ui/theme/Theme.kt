@@ -149,6 +149,10 @@ fun BitChordTheme(
         typography = when (font) {
             AppFont.DEFAULT -> BitChordTypography
             AppFont.LEGACY -> LegacyTypography
+            AppFont.SYSTEM -> BitChordTypography.withFamily(FontFamily.Default)
+            AppFont.SERIF -> BitChordTypography.withFamily(FontFamily.Serif)
+            AppFont.MONOSPACE -> BitChordTypography.withFamily(FontFamily.Monospace)
+            AppFont.VOLTE_ROUNDED -> BitChordTypography.withFamily(FontFamily(Font(R.font.volte_rounded)))
         },
         content = content,
     )

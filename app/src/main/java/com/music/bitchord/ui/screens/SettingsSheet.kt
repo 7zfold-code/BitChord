@@ -2283,6 +2283,10 @@ private fun AppFont.localizedLabel(): String = stringResource(
     when (this) {
         AppFont.DEFAULT -> R.string.font_default
         AppFont.LEGACY -> R.string.font_legacy
+        AppFont.SYSTEM -> R.string.font_system
+        AppFont.SERIF -> R.string.font_serif
+        AppFont.MONOSPACE -> R.string.font_monospace
+        AppFont.VOLTE_ROUNDED -> R.string.font_volte_rounded
     },
 )
 
@@ -2292,6 +2296,10 @@ private fun AppFont.description(): String = stringResource(
     when (this) {
         AppFont.DEFAULT -> R.string.font_default_subtitle
         AppFont.LEGACY -> R.string.font_legacy_subtitle
+        AppFont.SYSTEM -> R.string.font_system_subtitle
+        AppFont.SERIF -> R.string.font_serif_subtitle
+        AppFont.MONOSPACE -> R.string.font_monospace_subtitle
+        AppFont.VOLTE_ROUNDED -> R.string.font_volte_rounded_subtitle
     },
 )
 
